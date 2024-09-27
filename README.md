@@ -75,7 +75,6 @@ In **Space Shooter**, you are the commander of a spaceship, tasked with survivin
 2. Navigate to the folder where you downloaded the `.jar` file.
    ```bash
    cd path/to/downloaded/jar
-  ```bash
    java -jar SpaceShooter.jar
 
 ---
