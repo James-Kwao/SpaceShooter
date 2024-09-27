@@ -56,7 +56,7 @@ In **Space Shooter**, you are the commander of a spaceship, tasked with survivin
 - Step 1:
   **Installing**
   --
-1. Navigate to the [releases](https://github.com/yourusername/space-shooter/out/artifacts/SpaceShooter) page of the repository.
+1. Navigate to the [release](out/artifacts/SpaceShooter/SpaceShooter.jar) page of the repository.
 2. Download the `.jar` file (e.g, `SpaceShooter.jar`).
 
 - Step 2:
