@@ -9,7 +9,6 @@
 6. [Installation](#installation)
 7. [Contributing](#contributing)
 8. [License](#license)
-9. [JAR FILE](out/artifacts/SpaceShooter/SpaceShooter.jar)
 
 ---
 
