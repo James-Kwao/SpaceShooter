@@ -62,9 +62,9 @@ In **Space Shooter**, you are the commander of a spaceship, tasked with survivin
 - Step 2:
   **Run the Game**
   --
-  If you already have Java installed on your machine, double click on the downloaded file to start.
-  If you don’t have Java installed, you’ll need to install the Java Runtime Environment (JRE) to run the game.
-  Download and install the JRE from the official Oracle website: [Download JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
+  If you already have Java installed on your machine, <i>double click on the downloaded file to start</i>.<br>
+  If you don’t have Java installed, you’ll need to install the Java Runtime Environment (JRE) to run the game.<br>
+  Download and install the JRE from the official Oracle website: [Download JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).<br>
   Once installed, verify the Java installation by running the following command in your terminal:
   ```bash
   java --version
