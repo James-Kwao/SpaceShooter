@@ -9,14 +9,18 @@ import java.io.InputStream;
 
 public class SoundsManager {
 
-    private static final Clip clip, effect;
+    private static Clip clip;
+    private static Clip effect;
 
     static {
         try {
             clip = AudioSystem.getClip();
             effect = AudioSystem.getClip();
         } catch (LineUnavailableException e) {
-            throw new RuntimeException(e);
+            clip = null;
+            effect = null;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 
@@ -32,6 +36,8 @@ public class SoundsManager {
     }
 
     public void loadRand() {
+        if (clip == null) return;
+        if (clip.isOpen()) clip.close();
         try {
             InputStream is = switch (GamePanel.rand.nextInt(1, 4)) {
                 case 1 -> ClassLoader.getSystemClassLoader().getResourceAsStream("res/sound/gameMusic_1.wav");
@@ -48,22 +54,26 @@ public class SoundsManager {
     }
 
     public void pauseMusic() {
+        if (clip == null) return;
         clip.setMicrosecondPosition(clip.getMicrosecondLength());
         clip.stop();
     }
 
     public void playMusic() {
+        if (clip == null) return;
         clip.start();
         clip.loop(Clip.LOOP_CONTINUOUSLY);
     }
 
     public void stopMusic() {
+        if (clip == null) return;
         clip.stop();
         clip.flush();
         clip.close();
     }
 
     public void playExplosion() {
+        if (effect == null) return;
         try {
             effect.setFramePosition(0);
             effect.setMicrosecondPosition(0);

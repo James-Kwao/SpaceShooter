@@ -41,9 +41,7 @@ public class GameWords extends RoundRectangle2D.Float {
                 y_speed = w.y_speed;
                 w.x_speed = tempX;
                 w.y_speed = tempY;
-                if (w.contains(super.x, super.y)) {
-                    super.y = (float) w.getMaxY(); // y position
-                }
+                if (w.contains(super.x, super.y)) super.y = (float) w.getMaxY(); // y position
                 break;
             }
         }
